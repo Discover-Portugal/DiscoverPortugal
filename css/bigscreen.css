@@ -1,2 +1,9 @@
+.content {
+    height: 95vh;
+}
 
-
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

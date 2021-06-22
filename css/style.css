@@ -1,16 +1,4 @@
-.navbarbg {
-    background-color: #F4667F ;
-    color: #DB2343;
-}
-
-.navbarbutton {
-    background-color: #9BEB62;
-}
-
-.nav-item:hover {
-    background-color: #F04765;
-}
-
+/* Color Pallette */
 .primary-1 { background-color: #FCB8C4 }
 .primary-2 { background-color: #F98B9E }
 .primary-0 { background-color: #F4667F }
@@ -29,7 +17,6 @@
 .secondary-2-3 { background-color: #53D43F }
 .secondary-2-4 { background-color: #35C11E }
 
-
 *{
     padding: 0;
     margin: 0;
@@ -37,6 +24,7 @@
     /* type here the font text */
 }
 
+/*Corrigir com div propria */
 body{
     width: 100%;
     height: 100vh;
@@ -154,3 +142,18 @@ body{
         height: 200px;
     }
 } 
+
+/* NAVBAR */
+.navbarbg {
+    background-color: #F4667F ;
+}
+
+.brand {
+    color: #53D43F !important
+}
+
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
