@@ -1,2 +1,27 @@
+.cardBody {
+    width: 200px;
+    padding: 5px;
+    align-content: center;
+}
 
+.cardImg {
+    width: 200px;
+    height: auto;
+    border-radius: 10% 10% 0 0;
+    z-index: -1;
+}
 
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.bgParallax {
+    background-image: url("/resources/img/portugal.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
