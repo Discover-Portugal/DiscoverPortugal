@@ -30,11 +30,11 @@
 .secondary-2-4 { background-color: #35C11E }
 
 
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* type here the font text */
+    type here the font text
 }
 
 body{
@@ -119,14 +119,14 @@ body{
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* .field:focus{
+.field:focus{
     background-color: :#fff;
     border: 2px solid rgba(30, 85, 250, 0.47);
-} */
+}
 
-/* .area {
+.area {
     min-width: 150px;
-} */
+}
 
 .btn {
     width: 100%;
@@ -152,5 +152,80 @@ body{
 
     .left{
         height: 200px;
-    }
+    } */
 } 
+/* next is Food.html */
+
+
+
+
+
+
+.containerMain {
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.headerTitle{
+    display: flex;
+    justify-content: center;
+}
+
+/* Tags para manter */
+.boxImg {
+    width: 250px;
+    height: 200px;
+}
+
+.boxFood {
+    max-width: 100%;
+    height: auto;
+    padding : 20px;
+    display:  flex;
+    justify-content: center;
+    flex-direction: row wrap;
+    
+}
+.txtBoxFood {
+    display: flex;
+    padding: 15px;
+    background-color: #D2FAB6;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.more {
+    color: #F04765;
+    text-align: right;
+}
+
+.more:hover {
+    color: #85E243
+}
+
+
+
+@media (max-width:650px){ 
+    .boxFood {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .boxImg {
+        width: 100%;
+        height: auto;
+    }
+}
+   
+
+
+
+
+
