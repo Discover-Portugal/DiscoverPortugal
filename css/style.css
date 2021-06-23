@@ -159,10 +159,7 @@ body{
 
 
 
-body{
 
-    
-}
 
 .containerMain {
     justify-content: center;
@@ -177,106 +174,55 @@ body{
     justify-content: center;
 }
 
+/* Tags para manter */
+.boxImg {
+    width: 250px;
+    height: 200px;
+}
 
-.boxFood1 {
+.boxFood {
     max-width: 100%;
     height: auto;
     padding : 20px;
     display:  flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row wrap;
     
 }
-
-.txtBoxFood1 {
+.txtBoxFood {
     display: flex;
+    padding: 15px;
     background-color: #D2FAB6;
-    
-}
-
-.boxFood2 {
-    max-width: 100%;
-    height: auto;
-    padding : 20px;
-    display:  flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     
 }
 
-.txtBoxFood2 {
-    display: flex;
-    background-color: #B4F388;
-    justify-content: center;
-    flex-direction: column;
-    
+.more {
+    color: #F04765;
+    text-align: right;
 }
 
-.boxFood3 {
-    max-width: 100%;
-    height: auto;
-    padding : 20px;
-    display:  flex;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-
-.txtBoxFood3 {
-    display: flex;
-    background-color: #B4F388;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-
-.boxFood4 {
-    max-width: 100%;
-    height: auto;
-    padding : 20px;
-    display:  flex;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-
-.txtBoxFood4 {
-    display: flex;
-    background-color: #B4F388;
-    justify-content: center;
-    flex-direction: column;
-    
+.more:hover {
+    color: #85E243
 }
 
 
-/* @media (min-width:500px){ 
 
-    .txtBoxFood1{
+@media (max-width:650px){ 
+    .boxFood {
+        max-width: 100%;
+        height: auto;
+        display: flex;
         justify-content: center;
         flex-direction: column;
-        display:  flex;
+
     }
-    .boxFood1 {
-        width: 400px;
-        justify-content: center;
-        flex-direction: column;
-        display:  flex;
-    
-    
+    .boxImg {
+        width: 100%;
+        height: auto;
     }
-    .boxFood2 {
-        width: 400px;
-    
-    }
-    .boxFood3 {
-        width: 400px;
-    
-    }
-    .boxFood4 {
-        width: 400px;
-    
-    }
-} */
+}
    
 
 
