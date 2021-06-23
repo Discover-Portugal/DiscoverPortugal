@@ -76,14 +76,7 @@ flex: 1 100%;
     padding: 0px 15px;
 }
 
-.bgParallax {
-    background-image: url("/resources/img/1.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 /*
 .team {
