@@ -1,16 +1,4 @@
-.navbarbg {
-    background-color: #F4667F ;
-    color: #DB2343;
-}
-
-.navbarbutton {
-    background-color: #9BEB62;
-}
-
-.nav-item:hover {
-    background-color: #F04765;
-}
-
+/* Color Pallette */
 .primary-1 { background-color: #FCB8C4 }
 .primary-2 { background-color: #F98B9E }
 .primary-0 { background-color: #F4667F }
@@ -30,6 +18,12 @@
 .secondary-2-4 { background-color: #35C11E }
 
 
+/* NAVBAR */
+.navbarbg {
+    background: none;
+    z-index: 999;
+    position: absolute;
+}
 /* *{
     padding: 0;
     margin: 0;
@@ -37,88 +31,69 @@
     type here the font text
 }
 
-body{
+/* Carousel
+.carousel-inner img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+  }  */
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;  
+    flex-flow: column;
+    height: auto !important; 
+    height: 100%; 
+    margin: 0 auto -30px; 
 }
 
-.containerContact{
-    position: relative;
+.wrapper > * {
+flex: 1 100%;
+}
+
+.listCards {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 20px 100px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
 }
 
-.containerContact:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url("/resources/img/img2.jpg") no-repeat center; 
-    background-size: cover;
-    z-index: -1;
-    filter: blur(50px);
-}
-
-.contact-box{
-    max-width: 850px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+.cards {
+    padding: 0px;
+    margin: 10px;
+    align-content: center;
     align-items: center;
     text-align: center;
-    background-color: #fff;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19)
 }
 
-.left{
-    height: 100%;
-    background: url("/resources/img/img3.jpg") no-repeat center; 
-    background-size: cover;
+.cardTitle {
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 30px;
 }
 
-.right{
-    padding: 25px 40px;
+.cardContent {
+    text-align:justify;
+    font-size: 15px;
+    text-justify: inter-word;
 }
 
-.contactUs{
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+.cardFooter {
+    text-align: right;
+    padding: 0px 15px;
 }
 
-.contactUs:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: #85E243;
+
+
+/*
+.team {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.field{
-    width: 100%;
-    padding: 0.5rem 1rem;
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0);
-    background-color: rgba(230,230, 230, 0.6) ;
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: .3s;
-}
-
-.field:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
+.teamcard {
+    display: flex;
+    justify-content: center;
 .field:focus{
     background-color: :#fff;
     border: 2px solid rgba(30, 85, 250, 0.47);
@@ -140,34 +115,47 @@ body{
     transition: .3s;
 }
 
-.btn:hover{
-    background-color: #9BEB62;
+}
+*/
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    color: white;
+    font-size: 10px;
+    height: 15px;
+}
+
+/* brands styling */
+.facebook {
+    color: #3b5998
+}
+.twitter {
+    color: #55acee;
+}
+.instagram {
+    color: #ac2bac;
+}
+.linkedin {
+    color: #0082ca;
+}
+.github {
+    color: #333333;
 }
 
 
-@media screen and (max-width:880px){
-    .contact-box{
-        grid-template-columns: 1fr;
-    }
-
-    .left{
-        height: 200px;
-    } */
-} 
+.left{
+    height: 200px;
+} */
 /* next is Food.html */
-
-
-
-
-
 
 .containerMain {
     justify-content: center;
     align-items: center;
 
 }
-
-
 
 .headerTitle{
     display: flex;
@@ -206,7 +194,6 @@ body{
 .more:hover {
     color: #85E243
 }
-
 
 
 @media (max-width:650px){ 
