@@ -17,10 +17,32 @@
 }
 
 .bgParallax {
-    background-image: url("/resources/img/portugal.jpg");
+    background-image: url("../resources/img/portugal.jpg");
     min-height: 180px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.listCards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.discoverCard {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+}
+
+.discoverImg {
+    width: 250px;
+    height: 250px;
+}
+
+.discoverContent {
+    font-size: 30px;
 }
