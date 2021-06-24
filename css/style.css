@@ -17,32 +17,30 @@
 .secondary-2-3 { background-color: #53D43F }
 .secondary-2-4 { background-color: #35C11E }
 
-
-/* NAVBAR */
 .navbarbg {
-    background: none;
-    z-index: 999;
-    position: absolute;
-}
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    type here the font text
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Carousel
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }  */
+.navbarlink {
+    text-shadow: 1px 1px #000000;
+}
+
+#line {
+    border-top: 1px solid #333333;
+}
+
+h1 {
+    padding: 15px;
+}
+
+.header {
+    margin-top: 50px;
+}
 
 .wrapper {
     min-height: 100vh;
     display: flex;  
     flex-flow: column;
-    height: auto !important; 
-    height: 100%; 
     margin: 0 auto -30px; 
 }
 
@@ -50,12 +48,55 @@
 flex: 1 100%;
 }
 
-.listCards {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: center;
+.cover {
+    max-height: 400px;
 }
+
+.discoverList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.discoverCard {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.discoverImg {
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.discoverContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+    text-align: center;
+
+}
+
+.discoverLink {
+    color: white;
+    font-family: Montserrat;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+.discoverLink:hover {
+    color: white;
+    font-family: Montserrat;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+
+.discoverCard:hover .discoverImg {
+    opacity: 0.3;
+  }
 
 .cards {
     padding: 0px;
@@ -87,40 +128,17 @@ flex: 1 100%;
     border-radius: 0 0 10% 10%;
 }
 
-/*
-.team {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+#aboutus {
+    align-items: baseline;
 }
 
-.teamcard {
-    display: flex;
-    justify-content: center;
-.field:focus{
-    background-color: :#fff;
-    border: 2px solid rgba(30, 85, 250, 0.47);
+.bio {
+    min-height: 400px;
 }
 
-.area {
-    min-width: 150px;
+.links {
+    text-align: center;
 }
-
-.btn {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem ;
-    background-color: #9BEB62;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    color: #fff;
-    transition: .3s;
-}
-
-}
-*/
-
 
 footer {
     display: flex;
@@ -148,6 +166,27 @@ footer {
     color: #333333;
 }
 
+
+
+/*
+
+.area {
+    min-width: 150px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem ;
+    background-color: #9BEB62;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+
+*/
 
 .left{
     height: 200px;
@@ -197,7 +236,6 @@ footer {
 .more:hover {
     color: #85E243
 }
-
 
 @media (max-width:650px){ 
     .boxFood {
