@@ -397,7 +397,7 @@ justify-content: center;
 
 .textBoxArticle {
     display: flex;
-    padding: 15px;
+    padding: 30px;
     background-color: #D4CDCD;
     justify-content: space-between;
     flex-direction: column;
@@ -426,10 +426,15 @@ justify-content: center;
     width: 50px;
 }
 
+.recipes {
+    text-align: center;
+    padding: 10px;
+}
+
 
 @media (max-width:650px){ 
 
-    .boxArticle .txtArticle{
+    .boxArticle {
         max-width: 100%;
         height: auto;
         display: flex;
@@ -442,7 +447,7 @@ justify-content: center;
         height: auto;
     
     }
-
+}
 
 
 
