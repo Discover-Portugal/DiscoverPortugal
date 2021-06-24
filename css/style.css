@@ -81,7 +81,7 @@
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("") no-repeat center;
+	background: url("../resources/img/carroussel4.jpg") no-repeat center;
 	background-size: cover;
 	filter: blur(50px);
 	z-index: -1;
@@ -391,6 +391,8 @@ justify-content: center;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+
+  filter:sepia(10%);
 }
 
 .middle {
@@ -407,11 +409,13 @@ justify-content: center;
 
 .food1:hover .imgFood1 {
     opacity: 0.3;
+    color: white;
     
   }
   
   .food1:hover .middle {
     opacity: 1;
+    color: white;
     
   }
 
@@ -423,13 +427,26 @@ justify-content: center;
     
   }
 
+  .listFood:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("../resources/img/backgrounddd.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+
   @media (max-width:650px){ 
     .textImage1 {
         font-size: 16px;
     }
   }
 
-  /* next is the Articles */
+  /* next is the Article */
 
 
 
@@ -438,19 +455,13 @@ justify-content: center;
     height: auto;
     padding : 20px;
     display:  flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: row wrap;
     border-radius: 10% 10% 0 0;
 
     
 }
 
-.boxImgArticle {
-    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-    width: 650px;
-    height: 600px;
-
-}
 
 
 .textBoxArticle {
@@ -466,10 +477,20 @@ justify-content: center;
     text-align: center;
     padding: 10px;
     position: relative;
-      
-  
+    
     
 }
+
+.titleSecond {
+    text-align: left;;
+    padding: 15px;
+}
+
+.txtArticle {
+    text-align: justify;
+}
+
+
 
 .titleArticle::after {
     content:' ';
@@ -484,11 +505,16 @@ justify-content: center;
     width: 50px;
 }
 
-.recipes {
-    text-align: center;
-    padding: 10px;
+
+.box {
+    padding: 20px;
 }
 
+.listRecipe {
+    
+    text-align: left;
+
+}
 
 @media (max-width:650px){ 
 
@@ -508,8 +534,81 @@ justify-content: center;
 }
 
 
+    /* next is ARTICLES */
 
+    .bodyArticles {
 
+    }
+
+    .listArticles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+       
+        
+    }
+    
+    .art1 {
+    
+        max-width: 100%;
+        height: auto;
+        padding : 20px;
+        display:  flex;
+        justify-content: center;
+        flex-direction: row wrap;
+        position: relative;
+        
+    }
+    
+    .imgArticles1 {
+        box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+        width: 450px;
+        height: 400px;
+        opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    
+    .middle1 {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+    
+    .art1:hover .img11 {
+        opacity: 0.3;
+        color: white;
+        
+      }
+      
+      .art1:hover .middle1 {
+        opacity: 1;
+        color: white;
+        
+      }
+    
+      .textAr1 {
+        background-color: rgba(255,152,152,1);
+        color: white;
+        font-size: 20px;
+        padding: 16px 32px;
+        
+      }
+    
+      @media (max-width:650px){ 
+        .textAr1 {
+            font-size: 16px;
+        }
+      }
 
 
 
