@@ -74,7 +74,8 @@
 	padding: 20px 100px;
 }
 
-.containerContact:after{
+
+/* .containerContact:after{
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -85,7 +86,13 @@
 	background-size: cover;
 	filter: blur(50px);
 	z-index: -1;
+} */
+
+.bodyContact {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+
 }
+
 .contact-box{
 	max-width: 850px;
 	display: grid;
@@ -170,7 +177,7 @@ textarea{
 	.contact-box{
 		grid-template-columns: 1fr;
 	}
-	.left{
+	.leftContact{
 		height: 200px;
 	}
 }
@@ -311,6 +318,10 @@ footer {
     font-size: 10px;
     height: 15px;
 }
+.bodyIndex {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+
+}
 
 /* brands styling */
 .facebook {
@@ -331,42 +342,33 @@ footer {
 
 
 
-/*
 
-.area {
-    min-width: 150px;
-}
-
-.btn {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem ;
-    background-color: #9BEB62;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    color: #fff;
-    transition: .3s;
-}
-
-*/
-
-.left{
-    height: 200px;
-} */
 /* next is Food.html */
 
 
 .bodyFood {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 
 }
+
+.titleFood{
+text-align: center;
+}
+
+.txtFood{
+text-align:center;
+text-indent: 50px;
+
+}
+
 
 .listFood {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+
    
-    
+
 }
 
 .food1 {
@@ -427,18 +429,8 @@ justify-content: center;
     
   }
 
-  .listFood:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: url("../resources/img/backgrounddd.jpg") no-repeat center;
-	background-size: cover;
-	filter: blur(50px);
-	z-index: -1;
-}
+  
+
 
   @media (max-width:650px){ 
     .textImage1 {
@@ -449,13 +441,32 @@ justify-content: center;
   /* next is the Article */
 
 
+.parallaxArt{
+
+    background-image: url("../resources/img/pastel2.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+
+.backgroundArt{
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    
+   
+
+}
+
+
 
 .boxArticle {
     max-width: 100%;
     height: auto;
     padding : 20px;
     display:  flex;
-    /* justify-content: center; */
     flex-direction: row wrap;
     border-radius: 10% 10% 0 0;
 
@@ -611,72 +622,6 @@ justify-content: center;
       }
 
 
-
-
-
-
-
-/* .containerMain {
-    justify-content: center;
-    align-items: center;
-
-}
-
-.headerTitle{
-    display: flex;
-    justify-content: center;
-}
-
-.boxImg {
-    width: 250px;
-    height: 200px;
-    border-radius: 10% 10% 0 0;
-}
-
-.boxFood {
-    max-width: 100%;
-    height: auto;
-    padding : 20px;
-    display:  flex;
-    justify-content: center;
-    flex-direction: row wrap;
-    
-}
-.txtBoxFood {
-    display: flex;
-    padding: 15px;
-    background-color: #D4CDCD;
-    justify-content: space-between;
-    flex-direction: column;
-    border-radius: 10% 10% 0 0;
-
-}
-
-
-.more {
-    color: #F04765;
-    text-align: right;
-}
-
-.more:hover {
-    color: #85E243
-}
-
-@media (max-width:650px){ 
-    .boxFood {
-        max-width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-    }
-    .boxImg {
-        width: 100%;
-        height: auto;
-    }
-} */
-   
 
 
 
