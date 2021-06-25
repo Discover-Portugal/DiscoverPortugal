@@ -6,7 +6,7 @@
 .cardImg {
     width: 300px;
     height: auto;
-    border-radius: 10% 10% 0 0;
+    border-radius: 10%;
     z-index: -1;
 }
 
