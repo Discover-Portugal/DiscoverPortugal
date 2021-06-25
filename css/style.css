@@ -293,10 +293,6 @@ flex: 1 100%;
     padding: 0px 15px;
 }
 
-.cardBorder {
-    border: #333333 solid 1px;
-    border-radius: 0 0 10% 10%;
-}
 
 #aboutus {
     align-items: baseline;
