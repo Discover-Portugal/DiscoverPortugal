@@ -21,7 +21,7 @@
 
 
 
-
+ 
 
 /* As hex codes */
 
@@ -195,7 +195,7 @@ textarea{
     text-shadow: 1px 1px #000000;
 }
 
-#line {
+.line {
     border-top: 1px solid #333333;
 }
 
@@ -211,7 +211,8 @@ h1 {
     min-height: 100vh;
     display: flex;  
     flex-flow: column;
-    margin: 0 auto -30px; 
+    margin: 0 auto -30px;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 
 .wrapper > * {
@@ -294,9 +295,7 @@ flex: 1 100%;
 }
 
 
-#aboutus {
-    align-items: baseline;
-}
+
 
 .bio {
     min-height: 400px;
@@ -313,10 +312,6 @@ footer {
     color: white;
     font-size: 10px;
     height: 15px;
-}
-.bodyIndex {
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-
 }
 
 /* brands styling */
@@ -376,7 +371,6 @@ justify-content: center;
     justify-content: center;
     flex-direction: row wrap;
     position: relative;
-    
 }
 
 .imgFood1 {
@@ -384,13 +378,13 @@ justify-content: center;
     width: 450px;
     height: 400px;
     opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-
-  filter:sepia(10%);
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    filter:sepia(10%);
 }
 
 .middle {
@@ -408,7 +402,6 @@ justify-content: center;
 .food1:hover .imgFood1 {
     opacity: 0.3;
     color: white;
-    
   }
   
   .food1:hover .middle {
@@ -418,13 +411,21 @@ justify-content: center;
   }
 
   .textImage1 {
-    background-color: rgba(255,152,152,1);
-    color: white;
-    font-size: 20px;
+    color: black;
+    font-family: Montserrat;
+    text-shadow: 1px 1px white;
+    text-decoration: none;
+    font-size: 35px;
     padding: 16px 32px;
     
   }
 
+    .textImage1:hover {
+        color: black;
+        font-family: Montserrat;
+        text-shadow: 1px 1px white;
+        text-decoration: none;
+    }
   
 
 
@@ -543,9 +544,7 @@ justify-content: center;
 
     /* next is ARTICLES */
 
-    .bodyArticles {
 
-    }
 
     .listArticles {
     display: flex;
