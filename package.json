@@ -1,0 +1,28 @@
+{
+  "name": "discoverportugal",
+  "version": "1.0.0",
+  "description": "<h1>Discover Portugal</h1> </br> Wild Code School Project 1 - developped by G and Victor </br> <a href=\"https://discover-portugal.github.io/DiscoverPortugal/\">Discover Portugal</a> </br> 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Discover-Portugal/DiscoverPortugal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Discover-Portugal/DiscoverPortugal/issues"
+  },
+  "homepage": "https://github.com/Discover-Portugal/DiscoverPortugal#readme",
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  }
+}
